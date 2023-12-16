@@ -86,8 +86,8 @@
   }
 
   // Main Sections: Portfolio.
-
   // Lightbox gallery.
+
   $window.on("load", function () {
     $("#portfolio").poptrox({
       caption: function ($a) {
@@ -102,14 +102,8 @@
       usePopupDefaultStyling: false,
       usePopupEasyClose: false,
       usePopupNav: true,
+      popupPadding: 0,
       windowMargin: breakpoints.active("<=small") ? 0 : 50,
-    });
-    $(function () {
-      $("#gallery").poptrox({
-        usePopupCaption: true,
-        usePopupNav: true,
-        popupPadding: 0,
-      });
     });
   });
 })(jQuery);

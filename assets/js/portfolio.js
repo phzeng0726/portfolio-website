@@ -1,6 +1,7 @@
 // 作品清單
 const projects = [
   {
+    demoUrl: "http://youtu.be/ILitfBOQzME",
     imageSrc: "images/projects/ordering_system_cover_large_padding.png",
     title: "Ordering System (Backend)",
     description:
@@ -8,6 +9,7 @@ const projects = [
     feature: "",
   },
   {
+    demoUrl: "http://youtu.be/ILitfBOQzME",
     imageSrc: "images/projects/order_ease_yellow.png",
     title: "Order Ease 餐點輕鬆訂",
     description:
@@ -15,6 +17,7 @@ const projects = [
     feature: "",
   },
   {
+    demoUrl: "http://youtu.be/Qtp0XSlX6XM",
     imageSrc: "images/projects/accounting_app_cover.png",
     title: "Accounting App",
     description:
@@ -23,6 +26,7 @@ const projects = [
       "功能：帳本記錄、文字化帳戶列表、視覺化統計圖表、字體調適、日期區間篩選...等。",
   },
   {
+    demoUrl: "http://youtu.be/YN8_XEp8O7Y",
     imageSrc: "images/projects/chat_app_cover.png",
     title: "Chat App",
     description: "簡單的聊天APP，是短時間內用來Demo的小小作品。",
@@ -39,14 +43,14 @@ projects.forEach((project, _) => {
   article.classList.add("col-6", "col-12-xsmall", "work-item");
 
   article.innerHTML = `
-      <a href="${project.imageSrc}" class="image fit thumb"">
-        <img src="${project.imageSrc}" alt="${project.title}" />
-      </a>
-      <h3>${project.title}</h3>
-      <p>${project.description}</p>
-      </br>
-      <p>${project.feature}</p>
-    `;
+  <a href="${project.demoUrl}" class="image fit thumb"">
+    <img src="${project.imageSrc}" alt="${project.title}" />
+  </a>
+  <h3>${project.title}</h3>
+  <p>${project.description}</p>
+  </br>
+  <p>${project.feature}</p>
+`;
 
   projectsContainer.appendChild(article);
 });
