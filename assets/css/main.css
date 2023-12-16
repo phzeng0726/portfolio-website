@@ -2720,6 +2720,12 @@ input[type="button"]:disabled,
   -ms-flex-grow: 1;
   flex-grow: 1;
   margin: 0 0 2em 0;
+  flex-direction: column; /* 這樣子元素將以垂直方向排列 */
+}
+
+#header > .inner > .job-titles {
+  flex-grow: 1;
+  margin: 0 0 2em 0; /* 注意單位必須加在數值後面，例如像這樣的 10px */
 }
 
 #header strong,
