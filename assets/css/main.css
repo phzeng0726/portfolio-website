@@ -2223,10 +2223,15 @@ input[type="radio"] + label:before {
   display: block;
   margin: 0 0 2em 0;
   width: 100%;
+  height: 300px; /* 設置固定高度為300像素 */
+  overflow: hidden; /* 避免圖片超出指定高度 */
 }
 
 .image.fit img {
   width: 100%;
+  height: 100%; /* 讓圖片高度填滿父元素的300像素高度 */
+  object-fit: cover; /* 填滿並保持圖片比例，可能會裁剪部分圖片 */
+  object-position: center; /* 圖片內容置中 */
 }
 
 .image.avatar {
