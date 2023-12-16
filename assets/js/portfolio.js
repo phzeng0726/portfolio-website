@@ -25,7 +25,7 @@ const projects = [
     article.classList.add("col-6", "col-12-xsmall", "work-item");
   
     article.innerHTML = `
-      <a href="${project.imageSrc}" class="image fit thumb" data-video-id="VIDEO_ID_${index}">
+      <a href="${project.imageSrc}" class="image fit thumb"">
         <img src="${project.imageSrc}" alt="${project.title}" />
       </a>
       <h3>${project.title}</h3>
