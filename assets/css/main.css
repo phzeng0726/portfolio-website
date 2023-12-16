@@ -636,6 +636,11 @@ pre code {
   padding-top: 5em;
 }
 
+/* Portfolio 的 source code href 為粗體 */
+#portfolio a {
+  font-weight: bold;
+}
+
 @media screen and (max-width: 1800px) {
   .row {
     display: flex;
