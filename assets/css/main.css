@@ -636,6 +636,11 @@ pre code {
   padding-top: 5em;
 }
 
+/* Portfolio 的 source code href 為粗體 */
+#portfolio a {
+  font-weight: bold;
+}
+
 @media screen and (max-width: 1800px) {
   .row {
     display: flex;
@@ -2223,10 +2228,15 @@ input[type="radio"] + label:before {
   display: block;
   margin: 0 0 2em 0;
   width: 100%;
+  height: 300px; /* 設置固定高度為300像素 */
+  overflow: hidden; /* 避免圖片超出指定高度 */
 }
 
 .image.fit img {
   width: 100%;
+  height: 100%; /* 讓圖片高度填滿父元素的300像素高度 */
+  object-fit: cover; /* 填滿並保持圖片比例，可能會裁剪部分圖片 */
+  object-position: center; /* 圖片內容置中 */
 }
 
 .image.avatar {
@@ -2720,6 +2730,12 @@ input[type="button"]:disabled,
   -ms-flex-grow: 1;
   flex-grow: 1;
   margin: 0 0 2em 0;
+  flex-direction: column; /* 這樣子元素將以垂直方向排列 */
+}
+
+#header > .inner > .job-titles {
+  flex-grow: 1;
+  margin: 0 0 2em 0; /* 注意單位必須加在數值後面，例如像這樣的 10px */
 }
 
 #header strong,
