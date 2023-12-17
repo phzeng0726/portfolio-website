@@ -120,9 +120,9 @@ projects.forEach((project, _) => {
     <img src="${project.imageSrc}" alt="${project.title}" />
   </a>
   
-  <h3>${project.title}</h3>
+  <h4>${project.title}</h3>
   <div class="project-detail">
-    <h6 class="project-main-skill-style">主要技術: ${project.mainSkill}</h6>
+    <h5>主要技術: ${project.mainSkill}</h5>
     <p>${project.description}</p>
     <a href="${project.projectLink}" class="source-code-style">${
     project.linkBtnTitle

@@ -636,35 +636,6 @@ pre code {
   padding-top: 5em;
 }
 
-/* Portfolio*/
-.combined-styles {
-  display: flex;
-  justify-content: space-between; /* 讓內部元素間距均勻 */
-  align-items: center; /* 元素垂直置中 */
-}
-
-.project-main-skill-style {
-  color: #787878;
-  font-size: 0.7em;
-  font-weight: 600;
-  line-height: 1.4em;
-  margin: 0 0 1em 0;
-  /* 設定容器大小 */
-  width: 100%;
-  /* 當文字超出容器大小時，顯示省略號 */
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.source-code-style {
-  color: #49bf9d;
-  font-size: 0.7em;
-  font-weight: 600;
-  line-height: 1em;
-  margin: 0 0 1em 0;
-}
-
 @media screen and (max-width: 1800px) {
   .row {
     display: flex;
@@ -2685,6 +2656,11 @@ input[type="button"]:disabled,
 }
 
 /* Work Item */
+#portfolio h3 {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin: 0 0 0.5em 0;
+}
 
 .work-item {
   margin: 0 0 2em 0;
@@ -2694,15 +2670,38 @@ input[type="button"]:disabled,
   margin: 0 0 1.5em 0;
 }
 
-.work-item h3 {
-  font-size: 1em;
-  margin: 0 0 0.5em 0;
+.work-item h4 {
+  font-size: 0.9em;
+  font-weight: 600;
+  margin: 0.6em 0 0.1em 0;
+}
+
+.work-item h5 {
+  color: #787878;
+  font-size: 0.7em;
+  font-weight: 600;
+  line-height: 1.4em;
+  margin: 0.5em 0;
+  /* 設定容器大小 */
+  width: 100%;
+  /* 當文字超出容器大小時，顯示省略號 */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .work-item p {
   font-size: 0.8em;
   line-height: 1.5em;
   margin: 0;
+}
+
+.source-code-style {
+  color: #49bf9d;
+  font-size: 0.7em;
+  font-weight: 600;
+  line-height: 1em;
+  margin: 0 0 1em 0;
 }
 
 /* Skill Item */
@@ -3324,13 +3323,6 @@ body.is-touch .poptrox-popup .closer {
     line-height: 1.75em;
   }
 
-  .project-main-skill-style {
-    /* 移除阻止文字換行的屬性 */
-    white-space: normal;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    /* 可根據手機尺寸調整其他樣式 */
-  }
   /* Header */
 
   #header {
@@ -3339,6 +3331,16 @@ body.is-touch .poptrox-popup .closer {
 
   #header h1 {
     font-size: 1.35em;
+  }
+
+  /* Portfolio */
+
+  #portfolio h5 {
+    /* 移除阻止文字換行的屬性 */
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* 可根據手機尺寸調整其他樣式 */
   }
 
   /* Footer */
