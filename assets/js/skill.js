@@ -22,7 +22,6 @@ const skills = [
     items: [
       "@title GCP",
       "Cloud Run / Cloud Function / Cloud Storage / App Engine / Compute Engine / Google Analytics",
-      "@blank",
       "@title AWS",
       "EC2 / Lambda / IoT Core / Fargate",
     ],
@@ -49,25 +48,25 @@ const skillsContainer = document.getElementById("skills-container");
 
 skills.forEach((skill, _) => {
   const article = document.createElement("article");
-  article.classList.add("col-4", "col-12-xsmall", "work-item");
+  article.classList.add("col-4", "col-12-xsmall", "skill-item");
   const skillsList = skill.items
     .map((item) => {
       if (item.startsWith("@title")) {
         // 取第七個位置開始，標題為粗體
-        return `<strong>${item.substring(7)}</strong><br />`;
+        return `<h4>${item.substring(7)}</h4>`;
       } else if (item.startsWith("@blank")) {
+        // 空格
         return `<br />`;
       } else {
-        return `${item}<br />`;
+        // 技能樹
+        return `<p>${item}</p>`;
       }
     })
     .join("");
 
   article.innerHTML = `
   <h3>${skill.title}</h3>
-  <p>
-    ${skillsList}
-  </p>
+  ${skillsList}
   `;
   skillsContainer.appendChild(article);
 });

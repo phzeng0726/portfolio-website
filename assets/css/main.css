@@ -2705,6 +2705,30 @@ input[type="button"]:disabled,
   margin: 0;
 }
 
+/* Skill Item */
+
+.skill-item {
+  margin: 0 0 2em 0;
+}
+
+.skill-item h3 {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin: 0 0 0.5em 0;
+}
+
+.skill-item h4 {
+  font-size: 0.9em;
+  font-weight: 600;
+  margin: 0.6em 0 0.1em 0;
+}
+
+.skill-item p {
+  font-size: 0.8em;
+  line-height: 1.7em;
+  margin: 0;
+}
+
 /* Header */
 
 #header {

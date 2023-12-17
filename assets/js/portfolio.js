@@ -35,7 +35,7 @@ const projects = [
       "Golang、MySQL、Restful API、FCM、Cloud Run、Swagger、Gmail SMTP、Docker、Git、Postman、Trello、DrawSQL",
     description:
       "一款具有商店管理與客戶點餐的餐廳點餐系統，商業使用者可輕鬆管理多個商店、菜單與座位，並即時接收客戶點餐訂單。" +
-      "而客戶也可掃描QRCode進行快速點餐，及時接收餐點製作狀態。",
+      "而客戶也可掃描QRCode進行快速點餐，即時接收餐點製作狀態。",
     imageSrc: "images/projects/ordering_system_database_structure.png",
     type: ProjectType.Backend,
     projectLink: "https://github.com/phzeng0726/ordering-system-backend",
@@ -82,7 +82,7 @@ const projects = [
       "Flutter(Bloc & MVC)、Restful API(dio)、FCM、Git、Postman、Trello",
     description:
       "餐點輕鬆訂可用來讓用戶進行快速點餐的APP，用戶一鍵可掃描商家提供的座位QRCode進行快速點餐，" +
-      "並結合Firebase Cloud Messaging (FCM)及時接收餐點製作狀態。",
+      "並結合Firebase Cloud Messaging (FCM)即時接收餐點製作狀態。",
     imageSrc: "images/projects/order_ease_app_video_cover.png",
     type: ProjectType.Frontend,
     projectLink: "https://github.com/phzeng0726/order-ease-app-demo",
@@ -99,9 +99,14 @@ const projects = [
 ];
 
 // 將作品資訊動態生成HTML
-const projectsContainer = document.getElementById("projects-container");
+const backendProjectsContainer = document.getElementById(
+  "backend-projects-container"
+);
 const frontendProjectsContainer = document.getElementById(
   "frontend-projects-container"
+);
+const sideProjectsContainer = document.getElementById(
+  "side-projects-container"
 );
 
 projects.forEach((project, _) => {
@@ -126,7 +131,9 @@ projects.forEach((project, _) => {
   `;
   if (project.type == ProjectType.Frontend) {
     frontendProjectsContainer.appendChild(article);
+  } else if (project.type == ProjectType.FullStack) {
+    sideProjectsContainer.appendChild(article);
   } else {
-    projectsContainer.appendChild(article);
+    backendProjectsContainer.appendChild(article);
   }
 });
