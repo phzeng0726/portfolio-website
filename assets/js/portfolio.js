@@ -65,7 +65,8 @@ const projects = [
   // Frontend
   new ProjectModel({
     title: "Earth Mission App",
-    mainSkill: "Flutter(Bloc & DDD)、GraphQL、Firebase、FCM、WeChat API...等",
+    mainSkill:
+      "Flutter(Bloc & DDD)、GraphQL、Firebase、FCM、WeChat API、Dotnet...等",
     description:
       "Acer Earth Mission App 將創意與綠意結合，透過 21 天行動與多項挑戰，邀請用戶一起參與綠能行動！" +
       "此 App 目前已於 Play Store 與 App Store 上架，並於 2023 年台北國際電腦展上公開發表，" +
