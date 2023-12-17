@@ -91,7 +91,7 @@
   $window.on("load", function () {
     $("#portfolio").poptrox({
       caption: function ($a) {
-        return $a.next("h3").text();
+        return $a.next("h4").text();
       },
       overlayColor: "#2c2c2c",
       overlayOpacity: 0.85,
