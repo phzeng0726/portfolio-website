@@ -91,7 +91,7 @@ const projects = [
   new ProjectModel({
     title: "Portfolio Website",
     mainSkill: "HTML、CSS、Javascript、Github Actions(CI/CD)、Git",
-    description: "個人作品集網站",
+    description: "個人作品集網站，並結合CI/CD進行自動化部署",
     imageSrc: "images/projects/portfolio_website_cover.png",
     type: ProjectType.Frontend,
     projectLink: "https://github.com/phzeng0726/portfolio-website",
