@@ -88,6 +88,14 @@ const projects = [
     projectLink: "https://github.com/phzeng0726/order-ease-app-demo",
     videoLink: "http://youtu.be/ILitfBOQzME",
   }),
+  new ProjectModel({
+    title: "Portfolio Website",
+    mainSkill: "HTML、CSS、Javascript、Github Actions(CI/CD)、Git",
+    description: "個人作品集網站",
+    imageSrc: "images/projects/portfolio_website_cover.png",
+    type: ProjectType.Frontend,
+    projectLink: "https://github.com/phzeng0726/portfolio-website",
+  }),
 ];
 
 // 將作品資訊動態生成HTML
