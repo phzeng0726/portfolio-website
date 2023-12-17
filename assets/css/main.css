@@ -637,20 +637,24 @@ pre code {
 }
 
 /* Portfolio*/
-#portfolio a {
-  font-weight: bold;
-}
-
 .combined-styles {
   display: flex;
   justify-content: space-between; /* 讓內部元素間距均勻 */
   align-items: center; /* 元素垂直置中 */
 }
 
+.project-main-skill-style {
+  color: #787878;
+  font-size: 0.7em;
+  font-weight: 600;
+  line-height: 1em;
+  margin: 0 0 1em 0;
+}
+
 .source-code-style {
   color: #49bf9d;
   font-size: 0.7em;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1em;
   margin: 0 0 1em 0;
 }
