@@ -32,7 +32,7 @@ const projects = [
   new ProjectModel({
     title: "Ordering System (Backend)",
     mainSkill:
-      "Golang、MySQL、Restful API、FCM、Cloud Run、Swagger、Docker、Git、Postman、Trello、DrawSQL",
+      "Golang、MySQL、Restful API、FCM、Cloud Run、Swagger、Gmail SMTP、Docker、Git、Postman、Trello、DrawSQL",
     description:
       "一款具有商店管理與客戶點餐的餐廳點餐系統，商業使用者可輕鬆管理多個商店、菜單與座位，並即時接收客戶點餐訂單。" +
       "而客戶也可掃描QRCode進行快速點餐，及時接收餐點製作狀態。",
@@ -43,7 +43,7 @@ const projects = [
   // Full Stack
   new ProjectModel({
     title: "Accounting App",
-    mainSkill: "Flutter(Bloc & DDD)、SQLite、Firestore、i18n、Git、XMind",
+    mainSkill: "Flutter(Bloc & DDD)、SQLite、Firestore、i18n、Git",
     description:
       "記帳 APP 是我在工作之餘的空閒時間自製的作品，" +
       "功能包含帳本記錄、文字化帳戶列表、視覺化統計圖表、字體調適、日期區間篩選...等。",
@@ -54,7 +54,7 @@ const projects = [
   new ProjectModel({
     title: "Chat App",
     mainSkill:
-      "Flutter(Bloc & DDD)、Firebase Auth、Firestore、Cloud Storage、Git、XMind",
+      "Flutter(Bloc & DDD)、Firebase Auth、Firestore、Cloud Storage、Git",
     description:
       "簡單的聊天APP，是短時間內製作用來Demo的小小作品，" +
       "功能包含好友新增、資料驗證、用戶註冊、即時傳訊、主題切換、多國語言切換...等。",
@@ -66,7 +66,7 @@ const projects = [
   new ProjectModel({
     title: "Earth Mission App",
     mainSkill:
-      "Flutter(Bloc & DDD)、GraphQL、Firebase、FCM、WeChat API、Dotnet...等",
+      "Flutter(Bloc & DDD)、GraphQL、Dotenv(Multiple Env)、Firebase、FCM、Third Party Tools (Google、Apple、WeChat...)、...等",
     description:
       "Acer Earth Mission App 將創意與綠意結合，透過 21 天行動與多項挑戰，邀請用戶一起參與綠能行動！" +
       "此 App 目前已於 Play Store 與 App Store 上架，並於 2023 年台北國際電腦展上公開發表，" +
@@ -114,6 +114,7 @@ projects.forEach((project, _) => {
   }" class="image fit thumb">
     <img src="${project.imageSrc}" alt="${project.title}" />
   </a>
+  
   <h3>${project.title}</h3>
   <div class="project-detail">
     <h6 class="project-main-skill-style">主要技術: ${project.mainSkill}</h6>

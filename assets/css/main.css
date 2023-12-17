@@ -647,7 +647,7 @@ pre code {
   color: #787878;
   font-size: 0.7em;
   font-weight: 600;
-  line-height: 1em;
+  line-height: 1.4em;
   margin: 0 0 1em 0;
   /* 設定容器大小 */
   width: 100%;
@@ -3300,6 +3300,13 @@ body.is-touch .poptrox-popup .closer {
     line-height: 1.75em;
   }
 
+  .project-main-skill-style {
+    /* 移除阻止文字換行的屬性 */
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* 可根據手機尺寸調整其他樣式 */
+  }
   /* Header */
 
   #header {
