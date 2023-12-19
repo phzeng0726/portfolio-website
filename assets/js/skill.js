@@ -6,7 +6,7 @@ const skills = [
       "Golang / Gin / Gorm / Swaggo",
       "Python / Flask",
       "Dart / Flutter",
-      "R",
+      "TypeScript / JavaScript",
     ],
   },
   {
