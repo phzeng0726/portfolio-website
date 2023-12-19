@@ -5,8 +5,8 @@ const skills = [
     items: [
       "Golang / Gin / Gorm / Swaggo",
       "Python / Flask",
+      "TypeScript / JavaScript",
       "Dart / Flutter",
-      "R",
     ],
   },
   {
